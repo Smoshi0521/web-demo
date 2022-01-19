@@ -1,6 +1,52 @@
-.example1{
-  border: 4px solid red;
+*{
+  margin:0px;
+  padding: 0px;
+}
+.header{
+  width: 100%;
+  height: 70px;
+  padding: 16px 24px;
+  display: block;
+  background-color: black
+}
+.innerheader{
+  width: 800px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border: 3px solid green;
+}
+.home{
+  height:100%;
+  display: table;
+  float: left;
+} 
+.home h1{
+  color: blueviolet;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 20px;
+}
+.navigation{
+height: 100%;
+float: right;
+}
+.navigation li{
+  height: 100%;
+  float: left;
+  display: table;
+  padding: 0px 25px;
+
+}
+.navigation a{
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.example2{
   padding: 10px;
   border-radius: 50px 20px;
-  color:brown;
+  color:rgb(0, 0, 0);
 }
