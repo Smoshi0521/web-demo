@@ -13,6 +13,7 @@ header{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 4;
 }
 header li{
   display: inline;
@@ -58,10 +59,9 @@ width: 100%;
 }
 .cryptoclub {
   margin-top: -40px;
-  height: 700px;
+  height: 670px;
   width: auto;
   background-color: rgb(34, 34, 34);
-  border: 3px solid green;
 }
 .cryptoclub h1{
   color: aquamarine;
@@ -76,7 +76,6 @@ width: 100%;
   font-size: 20px;
   text-indent: 30px;
   text-align: center;
-  border: 3px solid red;
   margin-top: -30px;
 }
 .button{
@@ -84,9 +83,8 @@ height: 35px;
 margin-left: 600px;
 margin-right: 600px;
 text-align: center;
-border: 3px solid red;
 }
-.team{
+.team {
   color:rgb(20 242 191) ;
   margin-top: -5px;
   height: 45px;
@@ -101,7 +99,7 @@ border: 3px solid rgb(235, 0, 255);
 }
 .club_monkey{
 width: 80%;
-height: 350px;
+height: 345x;
 display: flex;
 margin-top: -37px;
 padding-left: 140px;
@@ -111,4 +109,7 @@ padding-left: 140px;
 }
 .club_monkey #branch{
   margin-left: -100px;
+}
+#genesis{
+  width: 100%;
 }
