@@ -1,52 +1,50 @@
-*{
+body{
   margin:0px;
   padding: 0px;
+  overflow-x: hidden;
 }
-.header{
-  width: 100%;
+header{
   height: 70px;
-  padding: 16px 24px;
-  display: block;
-  background-color: black
+  padding: 15px;
+  background-color: black;
+  text-align: center;
 }
-.innerheader{
-  width: 800px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  background-color: white;
-  border: 3px solid green;
+header li{
+  display: inline;
+  padding-left: 20px;
 }
-.home{
-  height:100%;
-  display: table;
+header li a{
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+header li img{
+  height: 109px;
+  width: 300px;
   float: left;
-} 
-.home h1{
-  color: blueviolet;
-  height: 100%;
-  vertical-align: middle;
-  display: table-cell;
-  font-size: 20px;
+  margin-left: -55px;
+  margin-top: -40px;
 }
-.navigation{
-height: 100%;
-float: right;
-}
-.navigation li{
-  height: 100%;
-  float: left;
-  display: table;
-  padding: 0px 25px;
+header ul #connect a{
+  color: black;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: rgb(20 242 191);
+  float: right;
+  position: relative;
+  padding-left: 20px;
+  font-size: 19px;
+  margin-top: -13px;
 
 }
-.navigation a{
-  font-size: 20px;
-  display: table-cell;
-  vertical-align: middle;
+header ul #connect a:hover{
+background-color: violet;
 }
-.example2{
-  padding: 10px;
-  border-radius: 50px 20px;
-  color:rgb(0, 0, 0);
+header ul #home a{
+color: blueviolet;
 }
+
