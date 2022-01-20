@@ -29,7 +29,7 @@ header li img{
 header ul #connect a{
   color: black;
   width: 200px;
-  height: 50px;
+  height: 35px;
   display: flex;
   align-items: center;
   border-radius: 30px;
@@ -38,7 +38,8 @@ header ul #connect a{
   position: relative;
   padding-left: 20px;
   font-size: 19px;
-  margin-top: -13px;
+  margin-top: -2px;
+  margin-right: 20px;
 
 }
 header ul #connect a:hover{
