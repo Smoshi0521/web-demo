@@ -2,12 +2,17 @@ body{
   margin:0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: black;
 }
 header{
   height: 70px;
   padding: 15px;
   background-color: black;
+  opacity: 0.9;
   text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 header li{
   display: inline;
@@ -48,4 +53,29 @@ background-color: violet;
 header ul #home a{
 color: blueviolet;
 }
-
+body img{
+width: 100%;
+}
+.cryptoclub {
+  margin-top: -40px;
+  height: 700px;
+  width: auto;
+  background-color: rgb(34, 34, 34);
+  border: 3px solid green;
+}
+.cryptoclub h1{
+  color: aquamarine;
+  line-height: 5;
+  font-size: 40px;
+  text-align: center;
+}
+.cryptoclub p{
+  color: white;
+  display: block;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  text-indent: 50px;
+  text-align: center;
+  margin: 0px;
+}
