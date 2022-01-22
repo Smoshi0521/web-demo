@@ -10,7 +10,6 @@ header{
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 4;
@@ -189,28 +188,30 @@ border: 3px solid rgb(235, 0, 255);
   background-color:rgb(235, 0, 255);
 }
 .black_container{
-  margin-top: -140px;
+  margin-top: -40px;
   width: 100%;
   height: 460px;
   background-color: rgba(34, 34, 34, 0.8);
   backdrop-filter: blur(10px);
-  opacity: 0.8;
-  
 }
 .genesis_p2{
   padding-top: 60px;
-  margin: 100px 680px 0px 70px;
+  margin: 10px 680px 0px 70px;
   height: 200px;
   color: white; 
   text-align: left; 
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   text-transform: none;
 }
 .really{
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
-  margin-right: 600px;
+  margin-top: 70px;
+  margin-right: 800px;
+  margin-left: 120px;
   line-height: 200px;
 }
 .really a{
@@ -220,8 +221,10 @@ border: 3px solid rgb(235, 0, 255);
   padding-left: 35px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin: 20px;
+  margin-left: 35px;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
 .read{
   color: rgb(20 242 191);
@@ -242,4 +245,56 @@ border: 3px solid rgb(235, 0, 255);
   border: 3px solid rgb(235, 0, 255);
 }
 
-
+.mk_container{
+  width: 600px;
+  height: 350px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -230px;
+  margin-right: 80px;
+}
+.mk1{
+  width: 250px;
+  height: 250px;
+  transform: translateX(120px);
+  position: relative;
+  animation: mymk1 6s infinite;
+ 
+}
+.mk2{
+  height: 270px;
+  position: relative;
+  animation: mymk2 6s infinite;
+ 
+}
+.mk3{
+  width: 250px;
+  height: 250px;
+  transform: translateX(-120px);
+  position: relative;
+  animation: mymk3 6s infinite;
+ 
+}
+@keyframes mymk1 {
+  0%   {right: 0px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  25%  {right: -260px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  50%  {right: -130px;width:250px;height:270px;opacity:1;z-index:1;}
+  75%  {right:  0px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  100% {right:  0px;width:250px;height:250px;opacity:0.6;z-index:0;} 
+}
+@keyframes mymk2 {
+  0%   {right: 0px;width:250px;height: 270px;opacity:2;z-index:1;}
+  25%  {right: 130px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  50%  {right: -130px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  75%  {right:  0px;width:250px;height:270px;opacity:1;z-index:1;}
+  100% {right:  0px;width:250px;height: 270px;opacity:1;z-index:1;} 
+}
+@keyframes mymk3 {
+  0%   {right: 0px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  25%  {right: 130px;width:250px;height:270px;opacity:1;z-index:1;}
+  50%  {right: 260px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  75%  {right: 0px;width:250px;height:250px;opacity:0.6;z-index:0;}
+  100% {right: 0px;width:250px;height:250px;opacity:0.6;z-index:0;} 
+}
