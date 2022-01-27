@@ -1,0 +1,10 @@
+body {
+  background-color: red;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: blue;
+  }
+}
+/*# sourceMappingURL=core.css.map */

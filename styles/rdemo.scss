@@ -1,0 +1,7 @@
+body {
+  background-color: $color-red;
+
+  @include medium-screen() {
+    background-color: $color-blue;
+  }
+}

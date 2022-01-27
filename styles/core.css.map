@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EFDN,GAAG;CEMd;;ADLC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;ECDrC,AAAA,IAAI,CAAC;IAID,gBAAgB,EFHP,IAAI;GEKhB",
+    "sources": [
+        "core.scss",
+        "partials/_variables.scss",
+        "partials/_mixins.scss",
+        "rdemo.scss"
+    ],
+    "names": [],
+    "file": "core.css"
+}
