@@ -1,58 +1,195 @@
-$color-black: #000;
-
+@import 'partials/theme-color';
+@import 'partials/mixins-hovers';
 body{
   margin:0px;
   padding: 0px;
-  overflow-x: hidden;
-  background-color: $color-black;
+  background-color: black;
 }
 header{
-  height: 70px;
-  padding: 15px;
-  background-color: $color-black;
-  opacity: 0.9;
-  text-align: center;
+  background-color: $colorblack;
+  backdrop-filter: blur(10px);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
   position: sticky;
   top: 0;
   z-index: 4;
-}
-header li{
-  display: inline;
-  padding-left: 20px;
-}
-header li a{
-  font-size: 19px;
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-}
-header li img{
-  height: 109px;
-  width: 300px;
-  float: left;
-  margin-left: -55px;
-  margin-top: -40px;
-}
-header ul #connect a{
-  color: black;
-  width: 200px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  border-radius: 30px;
-  background-color: rgb(20, 242, 191);
-  float: right;
-  padding-left: 20px;
-  font-size: 19px;
-  margin-top: -2px;
-  margin-right: 20px;
+  .menu-box{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly;
+    .logo-container{
+      width: 25%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #logo{
+        width: 310px;
+        height: 90px;
+        position: absolute;
+        left: 0px;
+      }
+    }
+    .link-box{
+      height: 100px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    & a{
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      margin-left: 20px;
+    }
+    #home{
+      color: $colorpink;
+      margin-left: 20px;
+      font-weight: bolder;
+    }
+    #col-container{
+      @include container;
+      #col-btn{
+        @include button;
+      }
+      #collection{
+        @include content;
+        a{
+          @include content-a;
 
-}
-header ul #connect a:hover{
-background-color: rgb(235, 0, 255);
-}
-header ul #home a{
-color: rgb(235, 0, 255);
+          &:hover{
+            color: $colorgreen;
+          }
+        }
+       }
+       &:hover #collection{
+        display: block;
+        }
+        &:hover #col-btn{
+         color: $colorgreen;
+        }
+    }
+    #gal-container{
+      @include container;
+
+      #gal-btn{
+        @include button;
+      }
+      #gallery{
+        @include content;
+        a{
+          @include content-a;
+          &:hover{
+            color: $colorgreen;
+          }
+        }
+      }
+      &:hover #gallery{
+        display: block;
+      }
+      &:hover #gal-btn{
+        color: $colorgreen;
+      }
+    }
+    #ben-container{
+      @include container;
+
+      #ben-btn{
+        @include button;
+      }
+      #benefits{
+        @include content;
+        
+        a{
+          @include content-a;
+          &:hover{
+            color: $colorgreen;
+          }
+        }
+      }
+      &:hover #benefits{
+        display: block;
+      }
+      &:hover #ben-btn{
+        color: $colorgreen;
+      }
+    }
+    #ab-container{
+      @include container;
+      #ab-btn{
+        @include button;
+      }
+      #about{
+        @include content;
+
+        a{
+          @include content-a;
+          &:hover{
+            color: $colorgreen;
+          }
+        }
+      }
+      &:hover #about{
+        display: block;
+      }
+      &:hover #ab-btn{
+        color: $colorgreen;
+      }
+    }
+    #link-container{
+      @include container;
+
+      #link-btn{
+        @include button;
+      }
+      #link{
+        @include content;
+        a{
+          @include content-a;
+          &:hover{
+            color: $colorgreen;
+          }
+        }
+      }
+      &:hover #link{
+        display: block;
+      }
+      &:hover #link-btn{
+        color: $colorgreen;
+      }  
+    }  
+  }
+    .connect-box{
+      width: 25%;
+      height: 100px;
+      #connect{
+        border-radius: 40px;
+        background-color: $colorgreen;
+        color: black;
+        font-size: 17px;
+        font-weight: bolder;
+        color: black;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        padding: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:hover{
+          background-color: $colorpink;
+        }
+      }
+    }
+  }
 }
 body img{
 width: 100%;
@@ -258,12 +395,14 @@ justify-content: center;
   border-radius: 30px;
 }
 .read{
-  color: rgb(20, 242, 191);
+  color: $colorgreen;
+  border: 2px solid $colorgreen;
   text-decoration: none;
   background-color: none;
 }
 .galry{
-  color: rgb(20, 242, 191);
+  color: $colorgreen;
+  border: 2px solid $colorgreen;
   text-decoration: none;
   background-color: none;
 }
@@ -650,4 +789,7 @@ background-color: rgb(17, 238, 187);
   text-decoration: none;
   font-size: 15px;
   margin-right: 80px;
+}
+@media screen and (max-width:800px){
+  
 }

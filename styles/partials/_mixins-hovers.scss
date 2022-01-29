@@ -1,0 +1,31 @@
+@mixin container {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+@mixin button {
+  color: white;
+  background-color: rgba(0,0,0,0);
+  font-size: 20px;
+  border: none;
+}
+@mixin content ($width:200px) {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: $width;
+  box-shadow: 20px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+@mixin content-a {
+  font-size: 17px;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+@mixin headerbackg{
+  background-color: black;
+  opacity: 0.6;
+}
